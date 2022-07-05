@@ -2,6 +2,7 @@ from aiogram import types, Dispatcher
 from create_bot import dp, bot
 from buttons.client_btn import btn_client
 
+
 async def commands_start(message: types.Message):
     try:
         await bot.send_message(message.from_user.id, "Приятного аппетита", reply_markup=btn_client)
